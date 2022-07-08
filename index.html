@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Quiz</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="read">
+            <a href="./highScores.html">High Scores List</a>
+
+        </div>
+        <div class="timer">
+            <h2>Timer: <span id="countdown">0</span></h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="questions" style="display: none;">
+                <h2 class="question-title">Title</h2>
+                <ul>
+                    <li class="answer-question"><button class="quize-button" id="1"></button></li>
+                    <li class="answer-question"><button class="quize-button" id="2"></button></li>
+                    <li class="answer-question"><button class="quize-button" id="3"></button></li>
+                    <li class="answer-question"><button class="quize-button" id="4"></button></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h2 class="quiz-title">Star Wars</h2>
+            </div>
+            <div class="rules">
+                <p class="quize-rules">How much do you know about the Skywalker Saga?</p>
+            </div>
+            <div class="button">
+                <button class="quiz-button" id="start-quiz">Start Quiz</button>
+            </div>
+        </div>
+        <div class="quiz-review" style="display: none;">
+            <h2 class="quiz-review-header">The Force is with you!</h2>
+            <p class="initial-record">Record Your Midichlorian Count here - Sign You Initials</p>
+            <form>
+                <input class="input-field" id="initials" type="text" name="player-initials">
+                <button class="button-submit" id="storage-submit" type="reset">Submit</button>
+            </input>
+            </form>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </main>
+    
+</body>
+    <footer>
+        &copy; 2022 Dustin Smiddie
+    </footer>
+
+</html>
